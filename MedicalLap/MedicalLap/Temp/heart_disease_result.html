@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Heart Application</h1>
+    <hr />
+    {% if heart_disease_result %}
+    <h1> HI {{heart_disease_result}}</h1>
+    {% endif %}
+
+
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <label>What is Your name? : <input type="text" name="name" /></label>
+        <br /><br />
+        <label>What is Your age : <input type="number" name="age" /></label>
+        <br /><br />
+        <label>What is Your sex <input type="text" name="sex" /></label>
+        <br /><br />
+        <label>What is Your cp: <input type="number" name="cp" /></label>
+        <br /><br />
+        <label>What is Your trestbps: <input type="number" name="trestbps" /></label>
+        <br /><br />
+        <label>What is Your chol: <input type="number" name="chol" /></label>
+        <br /><br />
+        <label>What is Your fbs :<input type="number" name="fbs" /></label>
+        <br /><br />
+        <label>What is Your restecg :<input type="number" name="restecg" /></label>
+        <br /><br />
+        <label>What is Your thalach: <input type="number" name="thalach" /></label>
+        <br /><br />
+        <label>What is Your exang: <input type="number" name="exang" /></label>
+        <br /><br />
+        <label>What is Your oldpeak: <input type="number" name="oldpeak" /></label>
+        <br /><br />
+        <label>What is Your slope: <input type="number" name="slope" /></label>
+        <br /><br />
+        <label>What is Your ca : <input type="number" name="ca" /></label>
+        <br /><br />
+        <label>What is Your thal: <input type="number" name="thal" /></label>
+        <br /><br />
+
+        <label>submit you result : <input type="submit" /></label>
+    </form>
+</body>
+
+</html>
